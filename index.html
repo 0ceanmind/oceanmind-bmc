@@ -63,6 +63,7 @@ body{
 .btn.primary{background:var(--accent);color:#062330;border-color:var(--accent)}
 .btn.ghost{background:transparent;color:var(--fg);border-color:var(--line-strong)}
 .btn[disabled]{opacity:.55;cursor:wait}
+a.btn{text-decoration:none;display:inline-block}
 
 /* ---------- board (the exported poster) ---------- */
 #canvasScope{container-type:inline-size}
@@ -209,6 +210,7 @@ body{
     </div>
     <div class="toolbar">
       <span id="saveState" aria-live="polite"></span>
+      <a class="btn ghost" id="langLink" href="ar.html" lang="ar">العربية</a>
       <button id="resetBtn" class="btn ghost" type="button">Clear all</button>
       <button id="exportPngBtn" class="btn primary" type="button">Export PNG</button>
       <button id="exportPdfBtn" class="btn primary" type="button">Export PDF</button>
@@ -322,7 +324,7 @@ body{
     </div>
   </div>
 
-  <div class="foot">AUTOSAVES IN THIS BROWSER · EXPORT PNG TO SHARE</div>
+  <div class="foot">AUTOSAVES IN THIS BROWSER · EXPORT PNG / PDF TO SHARE</div>
 </div>
 
 <script>
